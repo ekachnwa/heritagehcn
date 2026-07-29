@@ -21,7 +21,7 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="mt-20 bg-slate-900 text-gray-300">
+    <footer className="bg-slate-900 text-gray-300">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
 
