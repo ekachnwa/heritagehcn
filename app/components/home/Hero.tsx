@@ -42,15 +42,12 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl lg:text-6xl">
-              Trusted Home Care.
-              <br />
-              Compassionate Support.
-              <br />
-              <span className="text-green-700">
+              Trusted Home Care. 
+              Lovely Support. 
+            </h1>
+            <span className="text-green-700 font-semibold text-lg">
                 Better Living at Home.
               </span>
-            </h1>
-
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
               Heritage Homecare Network Limited provides
               professional Home & Community-Based Services
@@ -67,28 +64,14 @@ export default function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="gap-2"
+                className="gap-2 border-green-700 text-green-700 hover:bg-green-50"
               >
                 Explore Services
                 <ArrowRight size={18} />
               </Button>
             </div>
 
-            <div className="mt-10 flex items-center gap-4 rounded-xl border bg-white p-5 shadow-sm">
-              <div className="rounded-full bg-green-100 p-3">
-                <Phone className="h-6 w-6 text-green-700" />
-              </div>
-
-              <div>
-                <p className="text-sm text-gray-500">
-                  Call Us Anytime
-                </p>
-
-                <h3 className="text-lg font-semibold text-slate-900">
-                  (214) 991-0608
-                </h3>
-              </div>
-            </div>
+            
           </div>
 
           {/* RIGHT */}
@@ -96,7 +79,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <Image
-                src="/images/hero-caregiver.jpg"
+                src="/images/hero-caregiver.png"
                 alt="Caregiver assisting an elderly woman"
                 width={700}
                 height={760}

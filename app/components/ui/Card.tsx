@@ -60,10 +60,12 @@ export function CardDescription({
 
 export function CardContent({
   children,
+  className,
 }: {
   children: ReactNode;
+  className?: string;
 }) {
-  return <div className="p-6">{children}</div>;
+  return <div className={cn("p-6", className)}>{children}</div>;
 }
 
 export function CardFooter({

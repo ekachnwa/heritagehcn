@@ -42,7 +42,7 @@ export default function About() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl">
               <Image
-                src="/images/about-homecare.jpg"
+                src="/images/about-homecare.png"
                 alt="Caregiver helping a senior woman"
                 width={650}
                 height={700}

@@ -12,12 +12,12 @@ import {
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Eligibility", href: "#" },
-  { name: "Service Areas", href: "#" },
-  { name: "Resources", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About Us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Eligibility", href: "/eligibility" },
+  { name: "Service Areas", href: "/service-areas" },
+  { name: "Resources", href: "/resources" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -49,8 +49,8 @@ export default function Header() {
       {/* Main Navigation */}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-700 font-bold text-white">
-            HH
+          <div className="flex h-12 w-12 items-center justify-center rounded-full font-bold text-white">
+            <img src="/logo.png" alt="Heritage Homecare Logo"  />
           </div>
 
           <div>

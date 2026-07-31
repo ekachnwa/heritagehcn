@@ -27,8 +27,8 @@ export default function Footer() {
 
         <div>
           <div className="mb-5 flex items-center gap-3">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-700 text-xl font-bold text-white">
-              HH
+            <div className="flex items-center justify-center rounded-full text-xl font-bold text-white">
+              <img src="/logo.png" alt="Heritage Homecare Logo" className="h-10 w-10" />
             </div>
 
             <div>

@@ -92,7 +92,7 @@ export default function Services() {
 
                   <Button
                     variant="outline"
-                    className="mt-8 w-full justify-between"
+                    className="mt-8 w-full justify-between border-green-700 text-green-700 hover:bg-green-50"
                   >
                     Learn More
 
