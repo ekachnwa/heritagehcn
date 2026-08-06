@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from "next/navigation";
 import {
   ArrowRight,
   Calendar,
@@ -17,6 +19,7 @@ const benefits = [
 ];
 
 export default function AboutCTA() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-emerald-600 py-24 text-white">
       {/* Decorative Background */}
@@ -76,7 +79,8 @@ export default function AboutCTA() {
               <div className="mt-8 space-y-4">
                 <Button
                   size="lg"
-                  className="w-full justify-center gap-2"
+                  className="w-full justify-center gap-2 cursor-pointer"
+                  onClick={() => router.push("/consultation")}
                 >
                   <Calendar size={20} />
                   Book Consultation
@@ -85,7 +89,7 @@ export default function AboutCTA() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full justify-center gap-2"
+                  className="w-full justify-center gap-2 cursor-pointer"
                 >
                   <Phone size={20} />
                   Call (214) 991-0608

@@ -1,3 +1,4 @@
+"use client"
 import {
   HeartPulse,
   Stethoscope,
@@ -13,6 +14,7 @@ import { SectionTitle } from "../../components/ui/SectionTitle";
 import { Card, CardContent } from "../../components/ui/Card";
 import { Button } from "../../components/ui/Button";
 import { Badge } from "../../components/ui/Badge";
+import { useRouter } from "next/navigation";
 
 const services = [
   {
@@ -54,6 +56,7 @@ const services = [
 ];
 
 export default function Services() {
+  const router = useRouter();
   return (
     <section className="bg-slate-50 py-24">
       <Container>
@@ -105,7 +108,10 @@ export default function Services() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button size="lg">
+          <Button size="lg"
+          className="course-pointer"
+          onClick={() => router.push("/services")}
+          >
             View All Services
           </Button>
         </div>

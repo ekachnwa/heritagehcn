@@ -1,10 +1,12 @@
+"use client"
 import { Phone, Calendar, ArrowRight } from "lucide-react";
-
+import { useRouter } from "next/navigation";
 import { Badge } from "../../components/ui/Badge";
 import { Button } from "../../components/ui/Button";
 import { Container } from "../../components/ui/Container";
 
 export default function CTA() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-green-700 via-green-800 to-slate-900 py-24 text-white">
       {/* Background Effects */}
@@ -31,16 +33,17 @@ export default function CTA() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
               size="lg"
-              className="min-w-[220px] bg-white text-green-800 hover:bg-gray-100"
+              className="min-w-[220px] bg-white text-green-800 hover:bg-gray-100 cursor-pointer"
+              onClick={() => router.push("/consultation")}
             >
-              <Calendar className="mr-2 h-5 w-5" />
+              <Calendar className="mr-2 h-5 w-5 " />
               Book a Consultation
             </Button>
 
             <Button
               variant="outline"
               size="lg"
-              className="min-w-[220px] border-white/30 bg-white/5 text-white hover:bg-white/10"
+              className="cursor-pointer min-w-[220px] border-white/30 bg-white/5 text-white hover:bg-white/10"
             >
               <Phone className="mr-2 h-5 w-5" />
               Call (214) 991-0608

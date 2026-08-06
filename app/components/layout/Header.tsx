@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
   Menu,
@@ -8,6 +9,7 @@ import {
   Phone,
   MapPin,
   Calendar,
+  ChevronDown,
 } from "lucide-react";
 
 const navigation = [
@@ -20,8 +22,18 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
+const serviceLinks = [
+  { name: "All Services", href: "/services" },
+  { name: "Skilled Nursing", href: "/services" },
+  { name: "Residential Services", href: "/services" },
+  { name: "In-Home Services", href: "/services" },
+  { name: "Respite Care", href: "/services" },
+];
+
 export default function Header() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <header className="w-full border-b bg-white shadow-sm">
@@ -66,18 +78,56 @@ export default function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium text-slate-700 transition hover:text-green-700"
-            >
-              {item.name}
-            </Link>
+            // item.name === "Services" ? (
+            //   <div key={item.name} className="group relative">
+            //     <div className="flex items-center gap-1">
+            //       <Link
+            //         href={item.href}
+            //         className="text-sm font-medium text-slate-700 transition hover:text-green-700"
+            //       >
+            //         {item.name}
+            //       </Link>
+            //       <button
+            //         type="button"
+            //         aria-label="Toggle Services menu"
+            //         className="text-slate-700 transition hover:text-green-700"
+            //       >
+            //         <ChevronDown size={16} />
+            //       </button>
+            //     </div>
+
+            //     <div className="invisible absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            //       <div className="rounded-lg border border-slate-200 bg-white p-2 shadow-lg">
+            //         {serviceLinks.map((service) => (
+            //           <Link
+            //             key={service.name}
+            //             href={service.href}
+            //             className="block rounded-md px-4 py-2.5 text-sm text-slate-700 transition hover:bg-green-50 hover:text-green-700"
+            //           >
+            //             {service.name}
+            //           </Link>
+            //         ))}
+            //       </div>
+            //     </div>
+            //   </div>
+            // ) : 
+            (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium text-slate-700 transition hover:text-green-700"
+              >
+                {item.name}
+              </Link>
+            )
           ))}
         </nav>
 
         <div className="hidden lg:block">
-          <button className="inline-flex items-center gap-2 rounded-lg bg-green-700 px-5 py-3 font-medium text-white transition hover:bg-green-800">
+          <button 
+          className="inline-flex items-center gap-2 rounded-lg bg-green-700 px-5 py-3 font-medium text-white transition hover:bg-green-800 cursor-pointer"
+          onClick={() => router.push("/consultation")}
+          >
             <Calendar size={18} />
             Book Consultation
           </button>
@@ -100,17 +150,61 @@ export default function Header() {
         <nav className="border-t bg-white lg:hidden">
           <div className="space-y-1 px-6 py-5">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="block rounded-lg px-4 py-3 hover:bg-gray-100"
-                onClick={() => setOpen(false)}
-              >
-                {item.name}
-              </Link>
+              item.name === "Services" ? (
+                <div key={item.name}>
+                  <div className="flex items-center rounded-lg hover:bg-gray-100">
+                    <Link
+                      href={item.href}
+                      className="flex-1 px-4 py-3"
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                    <button
+                      type="button"
+                      aria-label="Toggle Services menu"
+                      aria-expanded={servicesOpen}
+                      className="px-4 py-3"
+                      onClick={() => setServicesOpen(!servicesOpen)}
+                    >
+                      <ChevronDown
+                        size={18}
+                        className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                  </div>
+
+                  {servicesOpen && (
+                    <div className="ml-4 border-l border-slate-200 pl-3">
+                      {serviceLinks.map((service) => (
+                        <Link
+                          key={service.name}
+                          href={service.href}
+                          className="block rounded-lg px-4 py-2.5 text-sm text-slate-600 hover:bg-gray-100 hover:text-green-700"
+                          onClick={() => setOpen(false)}
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block rounded-lg px-4 py-3 hover:bg-gray-100"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
 
-            <button className="mt-4 w-full rounded-lg bg-green-700 py-3 text-white">
+            <button 
+              className="mt-4 w-full rounded-lg bg-green-700 py-3 text-white"
+              onClick={() => router.push("/consultation")}
+            >
               Book Consultation
             </button>
           </div>

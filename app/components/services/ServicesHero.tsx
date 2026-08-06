@@ -94,7 +94,7 @@ export default function ServicesHero() {
 
             <div className="overflow-hidden rounded-[2rem] shadow-2xl">
               <Image
-                src="/images/services-hero.jpg"
+                src="/images/services-hero.png"
                 alt="Caregiver providing support to a young adult"
                 width={900}
                 height={700}

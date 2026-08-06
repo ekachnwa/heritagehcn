@@ -1,3 +1,5 @@
+"use client"
+import { useRouter } from "next/navigation";
 import {
   ArrowRight,
   Calendar,
@@ -18,6 +20,7 @@ const benefits = [
 ];
 
 export default function ServicesCTA() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-green-900 to-green-700 py-24">
       {/* Background Decorations */}
@@ -65,7 +68,10 @@ export default function ServicesCTA() {
               </div>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <Button size="lg">
+                <Button size="lg"
+                className="cursor-pointer"
+                onClick={() => router.push("/consultation")}
+                >
                   Schedule Consultation
 
                   <Calendar className="ml-2 h-5 w-5" />
@@ -74,7 +80,7 @@ export default function ServicesCTA() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-green-700"
+                  className="border-white text-green-700 cursor-pointer hover:bg-white hover:text-green-800"
                 >
                   <Phone className="mr-2 h-5 w-5" />
 
@@ -143,7 +149,9 @@ export default function ServicesCTA() {
                 </div>
               </div>
 
-              <Button className="mt-10 w-full justify-center">
+              <Button className="mt-10 w-full justify-center cursor-pointer"
+              onClick={() => router.push("/contact")}
+              >
                 Contact Our Care Team
 
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -169,7 +177,8 @@ export default function ServicesCTA() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="bg-white text-green-700 hover:bg-green-50"
+                className="bg-white text-green-700 hover:bg-green-50 cursor-pointer"
+                onClick={() => router.push("/services")}
               >
                 Explore Our Programs
 

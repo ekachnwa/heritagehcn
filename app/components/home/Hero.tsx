@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Phone, ArrowRight, ShieldCheck, HeartHandshake, Users, BadgeCheck } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
+
 
 const features = [
   {
@@ -24,6 +28,7 @@ const features = [
 ];
 
 export default function Hero() {
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-slate-50 to-green-50">
       {/* Background Decorations */}
@@ -57,14 +62,17 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button size="lg">
+              <Button size="lg"
+              onClick={() => router.push("/consultation")}
+              className="cursor-pointer">
                 Book Consultation
               </Button>
 
               <Button
                 variant="outline"
                 size="lg"
-                className="gap-2 border-green-700 text-green-700 hover:bg-green-50"
+                className="gap-2 border-green-700 text-green-700 hover:bg-green-50 cursor-pointer"
+                onClick={() => router.push("/services")}
               >
                 Explore Services
                 <ArrowRight size={18} />
