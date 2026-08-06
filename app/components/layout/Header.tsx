@@ -16,9 +16,9 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Eligibility", href: "/eligibility" },
-  { name: "Service Areas", href: "/service-areas" },
-  { name: "Resources", href: "/resources" },
+  // { name: "Eligibility", href: "/eligibility" },
+  // { name: "Service Areas", href: "/service-areas" },
+  // { name: "Resources", href: "/resources" },
   { name: "Contact", href: "/contact" },
 ];
 

@@ -1,60 +1,75 @@
 import Image from "next/image";
 
 import { Container } from "../../components/ui/Container";
+import { Badge } from "../ui/Badge";
 
 export default function ContactHero() {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-r from-[#eef8ff] via-white to-[#f8fbf9]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-green-50">
+      <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-green-100/40 blur-3xl" />
+      <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-blue-100/30 blur-3xl" />
+
       <Container>
-        <div className="relative grid min-h-[430px] items-center lg:grid-cols-2">
-          {/* Content */}
-          <div className="relative z-20 py-16 lg:py-20">
-            <h1 className="font-serif text-5xl font-bold leading-[1.08] tracking-tight text-[#09275f] sm:text-6xl lg:text-[64px]">
-              Contact Us
-            </h1>
-
-            <div className="mt-5 max-w-xl">
-              <h2 className="text-2xl font-bold leading-tight text-[#176d2d] sm:text-3xl">
-                We’re Here to Help.
-                <br />
-                Let’s Start the Conversation.
-              </h2>
-
-              <div className="mt-5 h-[3px] w-10 bg-[#176d2d]" />
-
-              <p className="mt-5 max-w-lg text-base leading-7 text-[#15264a] sm:text-lg">
-                Have a question about our services or want to learn how we can
+            <div className="grid items-center gap-14 py-20 lg:grid-cols-2 lg:py-24">
+              {/* Content */}
+              <div>
+                <Badge>Contact Us</Badge>
+    
+                <h1 className="mt-6 text-5xl font-extrabold leading-tight text-slate-900 lg:text-6xl">
+                  We’re Here to Help.
+                  <br />
+                               
+                </h1>
+                <span className="text-green-700 font-semibold">Let’s Start the Conversation. </span>
+    
+                <div className="mt-6 h-1 w-20 rounded-full bg-green-700" />
+    
+                <p className="mt-8 text-lg leading-8 text-slate-600">
+                  Have a question about our services or want to learn how we can
                 support your loved one? Reach out to our compassionate team
                 today. We’re ready to listen and help.
-              </p>
+                </p>
+    
+              </div>
+    
+              {/* Image */}
+    
+              <div className="relative">
+                {/* Main Image */}
+    
+                <div className="overflow-hidden rounded-[2rem] shadow-2xl">
+                  <Image
+                    src="/images/contact-hero.png"
+                    alt="Caregiver assisting an elderly gentleman"
+                    width={760}
+                    height={760}
+                    priority
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                {/* Decorative Circle */}
+    
+                <div className="absolute -right-12 bottom-0 h-40 w-40 rounded-full border-[12px] border-green-600 opacity-30" />
+              </div>
             </div>
-          </div>
+          </Container>
 
-          {/* Hero Image */}
-          <div className="relative h-[430px] lg:absolute lg:-right-[8%] lg:top-0 lg:h-full lg:w-[62%]">
-            <div className="absolute inset-0 overflow-hidden">
-              <Image
-                src="/images/contact-hero.png"
-                alt="Caregiver supporting an elderly woman at home"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 62vw"
-                className="object-cover object-center"
-              />
-
-              {/* Soft fade into content */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#eef8ff] via-transparent to-transparent lg:w-1/2" />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent" />
-            </div>
-
-            
-          </div>
-        </div>
-      </Container>
-
-      {/* Mobile image separator */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-slate-200" />
+      {/* Bottom Curve Decoration */}
+    
+          <svg
+            className="absolute bottom-0 left-0 w-full text-white"
+            viewBox="0 0 1440 120"
+            fill="currentColor"
+          >
+            <path d="M0,96L80,90.7C160,85,320,75,480,69.3C640,64,800,64,960,74.7C1120,85,1280,107,1360,117.3L1440,128L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z" />
+          </svg>
     </section>
+
+
+          
+    
+          
+    
+          
   );
 }
