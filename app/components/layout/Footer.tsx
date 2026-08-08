@@ -3,20 +3,18 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const quickLinks = [
-  "Home",
-  "About Us",
-  "Services",
-  "Eligibility",
-  "Resources",
-  "Contact",
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const services = [
-  "Adaptive Aids",
-  "Critical Care Nursing",
-  "Residential Services",
-  "Speech Therapy",
-  "Dietary Services",
+  { name: "Adaptive Aids", href: "/services" },
+  { name: "Critical Care Nursing", href: "/services" },
+  { name: "Residential Services", href: "/services" },
+  { name: "Speech Therapy", href: "/services" },
+  { name: "Dietary Services", href: "/services" },
 ];
 
 export default function Footer() {
@@ -64,9 +62,9 @@ export default function Footer() {
 
           <ul className="space-y-3">
             {quickLinks.map((item) => (
-              <li key={item}>
-                <Link href="#" className="hover:text-white">
-                  {item}
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-white">
+                  {item.name}
                 </Link>
               </li>
             ))}
@@ -82,9 +80,9 @@ export default function Footer() {
 
           <ul className="space-y-3">
             {services.map((item) => (
-              <li key={item}>
-                <Link href="#" className="hover:text-white">
-                  {item}
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-white">
+                  {item.name}
                 </Link>
               </li>
             ))}
