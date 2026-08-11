@@ -64,9 +64,9 @@ export default function ServiceAreas() {
               ))}
             </div>
 
-            <Button className="mt-10" size="lg">
+            {/* <Button className="mt-10" size="lg">
               Check Your Eligibility
-            </Button>
+            </Button> */}
           </div>
 
           {/* Right */}

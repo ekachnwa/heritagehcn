@@ -70,7 +70,7 @@ export default function ServicesHero() {
 
             {/* Buttons */}
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            {/* <div className="mt-10 flex flex-wrap gap-4">
               <Button size="lg">
                 Explore Services
 
@@ -80,7 +80,7 @@ export default function ServicesHero() {
               <Button variant="outline" size="lg">
                 Contact Us
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Image */}

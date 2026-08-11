@@ -10,11 +10,11 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: "Adaptive Aids", href: "/services" },
-  { name: "Critical Care Nursing", href: "/services" },
-  { name: "Residential Services", href: "/services" },
-  { name: "Speech Therapy", href: "/services" },
-  { name: "Dietary Services", href: "/services" },
+  { name: "Adaptive Aids", href: "/services/adaptive-aids" },
+  { name: "Critical Care Nursing", href: "/services/critical-care-nursing" },
+  { name: "Residential Services", href: "/services/residential-services" },
+  { name: "Speech Therapy", href: "/services/speech-therapy" },
+  { name: "Dietary Services", href: "/services/dietary-services" },
 ];
 
 export default function Footer() {

@@ -136,7 +136,7 @@ export default function AboutCTA() {
                 </p>
               </div>
 
-              <Button
+              {/* <Button
                 variant="secondary"
                 size="lg"
                 className="gap-2 bg-white text-green-700 hover:bg-green-50"
@@ -144,7 +144,7 @@ export default function AboutCTA() {
                 Contact Our Team
 
                 <ArrowRight size={18} />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

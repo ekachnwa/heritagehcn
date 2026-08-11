@@ -174,7 +174,7 @@ export default function ServicesCTA() {
                 </p>
               </div>
 
-              <Button
+              {/* <Button
                 variant="secondary"
                 size="lg"
                 className="bg-white text-green-700 hover:bg-green-50 cursor-pointer"
@@ -183,7 +183,7 @@ export default function ServicesCTA() {
                 Explore Our Programs
 
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
