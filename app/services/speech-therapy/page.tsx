@@ -32,7 +32,7 @@ export default function SpeechTherapyPage() {
             <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                <div className="grid gap-0 overflow-hidden rounded-2xl border border-slate-100 bg-[#f5faf6] lg:grid-cols-2">
                  <SpeechTherapyAudience />
-                 <SpeechTherapyBenefits/>
+                 <SpeechTherapyBenefits />
                </div>
              </div>
            </section>
