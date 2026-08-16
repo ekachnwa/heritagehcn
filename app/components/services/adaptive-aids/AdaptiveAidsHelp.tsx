@@ -39,7 +39,7 @@ export default function AdaptiveAidsHelp() {
         {/* Image */}
         <div className="relative mx-auto my-6 h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-md md:my-0 md:ml-6 lg:h-44 lg:w-44">
           <Image
-            src="/images/adaptive-aids/adaptive-aids-help.jpg"
+            src="/images/adaptive-aids-help.png"
             alt="Caregiver helping an older adult choose adaptive equipment"
             fill
             sizes="(max-width: 768px) 160px, 185px"

@@ -48,7 +48,7 @@ export default function AdaptiveAidsHero() {
           <div className="relative h-[360px] sm:h-[420px] lg:absolute lg:-right-[7%] lg:top-0 lg:h-full lg:w-[61%]">
             <div className="absolute inset-0 overflow-hidden">
               <Image
-                src="/images/adaptive-aids/adaptive-aids-hero.jpg"
+                src="/images/consultation-hero.png"
                 alt="Caregiver assisting an older adult with adaptive care at home"
                 fill
                 priority
@@ -63,33 +63,6 @@ export default function AdaptiveAidsHero() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/20 to-transparent" />
             </div>
 
-            {/* Curved Heritage green accent */}
-            <div
-              className="pointer-events-none absolute -bottom-1 left-[-13%] z-20 h-32 w-[125%] sm:h-36"
-              aria-hidden="true"
-            >
-              <svg
-                viewBox="0 0 1000 180"
-                preserveAspectRatio="none"
-                className="h-full w-full"
-              >
-                {/* White separation between image and green accent */}
-                <path
-                  d="M0 180 C190 178 330 155 470 105 C625 48 765 20 1000 4"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="25"
-                />
-
-                {/* Green curve */}
-                <path
-                  d="M0 180 C190 178 330 155 470 105 C625 48 765 20 1000 4"
-                  fill="none"
-                  stroke="#176d2d"
-                  strokeWidth="8"
-                />
-              </svg>
-            </div>
           </div>
         </div>
       </Container>

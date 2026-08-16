@@ -29,7 +29,7 @@ const categories: AidCategory[] = [
     title: "Bathroom Safety",
     description:
       "Equipment to improve safety and accessibility in the bathroom.",
-    image: "/images/adaptive-aids/bathroom-safety.jpg",
+    image: "/images/bathroom-safety.png",
     icon: ShieldCheck,
     href: "/adaptive-aids/bathroom-safety",
   },
@@ -37,7 +37,7 @@ const categories: AidCategory[] = [
     title: "Mobility & Movement",
     description:
       "Aids to help with walking, transferring, and getting around.",
-    image: "/images/adaptive-aids/mobility-movement.jpg",
+    image: "/images/mobility-movement.png",
     icon: Accessibility,
     href: "/adaptive-aids/mobility-movement",
   },
@@ -45,7 +45,7 @@ const categories: AidCategory[] = [
     title: "Daily Living Aids",
     description:
       "Tools that make everyday tasks simpler and more manageable.",
-    image: "/images/adaptive-aids/daily-living-aids.jpg",
+    image: "/images/daily-living-aids.png",
     icon: Utensils,
     href: "/adaptive-aids/daily-living",
   },
@@ -53,7 +53,7 @@ const categories: AidCategory[] = [
     title: "Bedroom Aids",
     description:
       "Products that support safe and comfortable rest and sleep.",
-    image: "/images/adaptive-aids/bedroom-aids.jpg",
+    image: "/images/bedroom-aids.png",
     icon: BedDouble,
     href: "/adaptive-aids/bedroom-aids",
   },
@@ -61,7 +61,7 @@ const categories: AidCategory[] = [
     title: "Kitchen Aids",
     description:
       "Helpful devices for meal preparation and kitchen tasks.",
-    image: "/images/adaptive-aids/kitchen-aids.jpg",
+    image: "/images/kitchen-aids.png",
     icon: ChefHat,
     href: "/adaptive-aids/kitchen-aids",
   },
@@ -69,7 +69,7 @@ const categories: AidCategory[] = [
     title: "Communication Aids",
     description:
       "Tools that support communication and connection.",
-    image: "/images/adaptive-aids/communication-aids.jpg",
+    image: "/images/communication-aids.png",
     icon: MessageCircle,
     href: "/adaptive-aids/communication-aids",
   },
@@ -77,7 +77,7 @@ const categories: AidCategory[] = [
     title: "Sensory Support",
     description:
       "Aids for vision, hearing, and sensory support needs.",
-    image: "/images/adaptive-aids/sensory-support.jpg",
+    image: "/images/sensory-support.png",
     icon: Ear,
     href: "/adaptive-aids/sensory-support",
   },
@@ -85,7 +85,7 @@ const categories: AidCategory[] = [
     title: "Orthotics & Supports",
     description:
       "Braces and supports that improve stability and function.",
-    image: "/images/adaptive-aids/orthotics-supports.jpg",
+    image: "/images/orthotics-supports.png",
     icon: HeartPulse,
     href: "/adaptive-aids/orthotics-supports",
   },
