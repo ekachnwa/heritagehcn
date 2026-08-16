@@ -49,7 +49,7 @@ export default function DietaryServicesHero() {
           <div className="relative h-[350px] sm:h-[410px] lg:absolute lg:-right-[7%] lg:top-0 lg:h-full lg:w-[61%]">
             <div className="absolute inset-0 overflow-hidden">
               <Image
-                src="/images/dietary-services/dietary-services-hero.jpg"
+                src="/images/dietary-services-hero.png"
                 alt="Caregiver supporting an older adult during a nutritious meal"
                 fill
                 priority
@@ -70,33 +70,6 @@ export default function DietaryServicesHero() {
               />
             </div>
 
-            {/* Heritage curved green accent */}
-            <div
-              className="pointer-events-none absolute -bottom-1 left-[-14%] z-20 h-32 w-[126%] sm:h-36"
-              aria-hidden="true"
-            >
-              <svg
-                viewBox="0 0 1000 180"
-                preserveAspectRatio="none"
-                className="h-full w-full"
-              >
-                {/* White outer border */}
-                <path
-                  d="M0 180 C190 178 330 155 470 105 C625 48 765 20 1000 4"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="25"
-                />
-
-                {/* Green accent */}
-                <path
-                  d="M0 180 C190 178 330 155 470 105 C625 48 765 20 1000 4"
-                  fill="none"
-                  stroke="#176d2d"
-                  strokeWidth="8"
-                />
-              </svg>
-            </div>
           </div>
         </div>
       </Container>

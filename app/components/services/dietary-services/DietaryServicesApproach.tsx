@@ -136,7 +136,7 @@ export default function DietaryServicesApproach() {
           <div className="relative mx-auto w-full max-w-[560px]">
             <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem]">
               <Image
-                src="/images/dietary-services/dietary-services-approach.jpg"
+                src="/images/dietary-services-approach.png"
                 alt="Caregiver supporting an older adult with a healthy meal"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"

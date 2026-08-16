@@ -129,7 +129,7 @@ export default function SpeechTherapyApproach() {
           <div className="relative mx-auto w-full max-w-[560px]">
             <div className="relative aspect-[4/4.4] overflow-hidden rounded-[2rem]">
               <Image
-                src="/images/speech-therapy/speech-therapy-approach.jpg"
+                src="/images/speech-therapy-approach.png"
                 alt="Speech therapist working with a client during an individualized therapy session"
                 fill
                 sizes="(max-width: 1024px) 100vw, 48vw"
