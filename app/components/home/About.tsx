@@ -53,10 +53,6 @@ export default function About() {
               />
             </div>
 
-            <div className="absolute -bottom-8 -right-8 rounded-3xl bg-green-700 p-8 text-white shadow-xl">
-              <h3 className="text-4xl font-bold">15+</h3>
-              <p className="mt-2">Years of Trusted Care</p>
-            </div>
           </div>
 
           {/* Content */}

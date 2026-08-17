@@ -24,15 +24,7 @@ export default function OurStory() {
 
             {/* Floating Experience Card */}
 
-            <div className="absolute -bottom-6 left-6 rounded-2xl bg-green-700 px-6 py-5 text-white shadow-lg">
-              <h3 className="text-3xl font-bold">
-                500+
-              </h3>
-
-              <p className="mt-1 text-sm text-green-100">
-                Individuals Supported
-              </p>
-            </div>
+            
           </div>
 
           {/* Right Content */}

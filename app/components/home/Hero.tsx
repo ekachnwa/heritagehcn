@@ -114,17 +114,6 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Experience Badge */}
-
-            <div className="absolute -right-5 top-10 rounded-2xl bg-green-700 px-6 py-5 text-white shadow-xl">
-              <h3 className="text-3xl font-bold">
-                15+
-              </h3>
-
-              <p className="text-sm">
-                Years Experience
-              </p>
-            </div>
           </div>
         </div>
 

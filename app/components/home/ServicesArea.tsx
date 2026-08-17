@@ -37,7 +37,7 @@ export default function ServiceAreas() {
             <div className="mt-4">
               <SectionTitle
                 align="left"
-                title="Proudly Serving Families Throughout North Texas"
+                title="Proudly Serving Families Throughout all Texas counties"
                 subtitle="Heritage Homecare Network Limited provides compassionate home healthcare services across multiple cities and surrounding communities."
               />
             </div>

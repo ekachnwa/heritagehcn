@@ -38,39 +38,7 @@ export default function AboutHero() {
               community we serve.
             </p>
 
-            {/* Stats */}
-
-            <div className="mt-12 grid grid-cols-3 gap-6">
-              <div>
-                <h3 className="text-4xl font-bold text-green-700">
-                  15+
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600">
-                  Years Experience
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-green-700">
-                  20+
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600">
-                  Communities Served
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-bold text-green-700">
-                  500+
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600">
-                  Families Supported
-                </p>
-              </div>
-            </div>
+            
           </div>
 
           {/* Image */}
@@ -89,17 +57,6 @@ export default function AboutHero() {
               />
             </div>
 
-            {/* Experience Badge */}
-
-            <div className="absolute -right-6 top-8 rounded-2xl bg-green-700 px-6 py-5 text-center text-white shadow-xl">
-              <h2 className="text-4xl font-bold">
-                15+
-              </h2>
-
-              <p className="mt-1 text-sm">
-                Years of Care
-              </p>
-            </div>
 
             {/* Decorative Circle */}
 
