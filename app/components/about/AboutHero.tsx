@@ -23,19 +23,12 @@ export default function AboutHero() {
             <div className="mt-6 h-1 w-20 rounded-full bg-green-700" />
 
             <p className="mt-8 text-lg leading-8 text-slate-600">
-              Heritage Homecare Network Limited is committed to
-              providing exceptional Home & Community-Based Services
-              and Texas Home Living programs that empower
-              individuals to live independently with dignity and
-              confidence.
+              Heritage Homecare Network is a comprehensive and innovative provider of complete Home and Community-based Services (HCS) and Texas Home Living (TxHmL) programs.
+              Our company was conceived with the idea of passionately assisting people with intellectual and developmental disabilities. 
             </p>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Our experienced caregivers and healthcare
-              professionals deliver compassionate support tailored
-              to each person's unique needs, promoting
-              independence and improving quality of life in every
-              community we serve.
+              We develop creative ways to improve the lives of the people we serve. We enable individuals with disabilities to pursue their dreams in their own homes and communities — with dignity, independence and the support of a team that truly cares.
             </p>
 
             

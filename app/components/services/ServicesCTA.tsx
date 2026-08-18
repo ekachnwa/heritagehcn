@@ -99,52 +99,46 @@ export default function ServicesCTA() {
               <h3 className="mt-6 text-3xl font-bold text-slate-900">
                 Why Families Choose Us
               </h3>
-
+{/* 
               <p className="mt-4 leading-7 text-slate-600">
                 Heritage Homecare Network Limited is committed to
                 delivering compassionate, reliable, and
                 person-centered care that helps individuals live
                 independently with confidence.
-              </p>
+              </p> */}
 
               <div className="mt-8 space-y-5">
                 <div className="flex items-center justify-between border-b pb-3">
                   <span className="text-slate-600">
-                    Years of Experience
-                  </span>
-
-                  <span className="font-bold text-green-700">
-                    15+
+                    Our company is owned by medical professionals.
                   </span>
                 </div>
 
                 <div className="flex items-center justify-between border-b pb-3">
                   <span className="text-slate-600">
-                    Families Served
-                  </span>
-
-                  <span className="font-bold text-green-700">
-                    500+
+                    Services are provided and managed directly by well-trained medical professionals.
                   </span>
                 </div>
 
                 <div className="flex items-center justify-between border-b pb-3">
                   <span className="text-slate-600">
-                    Healthcare Services
-                  </span>
-
-                  <span className="font-bold text-green-700">
-                    14+
+                     We provide warm, loving and caring homes for the individuals in our programs.
                   </span>
                 </div>
 
                 <div className="flex items-center justify-between">
                   <span className="text-slate-600">
-                    Communities Served
+                    Our interdisciplinary team helps identify and plan the services needed, in line with each individual's specific circumstances.
                   </span>
-
-                  <span className="font-bold text-green-700">
-                    20+
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-600">
+                    Support services available through HCS and TxHmL are provided in the recipient's home or in the community.
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-600">
+                    We always go the extra mile to help and care for our residents.
                   </span>
                 </div>
               </div>

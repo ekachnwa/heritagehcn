@@ -131,7 +131,7 @@ function AidCategoryCard({ category }: { category: AidCategory }) {
           {category.description}
         </p>
 
-        <Link
+        {/* <Link
           href={category.href}
           className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-[#176d2d] transition-colors hover:text-[#0f4f21] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#176d2d] focus-visible:ring-offset-2"
         >
@@ -140,7 +140,7 @@ function AidCategoryCard({ category }: { category: AidCategory }) {
             className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
             aria-hidden="true"
           />
-        </Link>
+        </Link> */}
       </div>
     </article>
   );

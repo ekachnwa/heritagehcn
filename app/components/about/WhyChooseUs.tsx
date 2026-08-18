@@ -95,37 +95,6 @@ export default function WhyChooseUs() {
 
         {/* Bottom Banner */}
 
-        <div className="mt-20 rounded-3xl bg-gradient-to-r from-green-700 to-emerald-600 p-10 text-white">
-          <div className="grid items-center gap-10 lg:grid-cols-4">
-            <div>
-              <h3 className="text-4xl font-bold">15+</h3>
-              <p className="mt-2 text-green-100">
-                Years of Experience
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold">500+</h3>
-              <p className="mt-2 text-green-100">
-                Families Supported
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold">20+</h3>
-              <p className="mt-2 text-green-100">
-                Communities Served
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-4xl font-bold">100%</h3>
-              <p className="mt-2 text-green-100">
-                Person-Centered Care
-              </p>
-            </div>
-          </div>
-        </div>
       </Container>
     </section>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   HeartHandshake,
   ShieldCheck,
@@ -12,36 +13,25 @@ import { Container } from "../../components/ui/Container";
 const features = [
   {
     icon: ShieldCheck,
-    title: "Licensed & Trained",
-    description: "Experienced healthcare professionals you can trust.",
+    title: "Our Promise",
+    description: "Warm, loving homes. Holistic care. An interdisciplinary team that plans every service around the individual — never the other way around.",
   },
   {
     icon: HeartPulse,
-    title: "Compassionate Care",
-    description: "Respectful, person-centered support every day.",
-  },
-  {
-    icon: House,
-    title: "Home & Community",
-    description: "Services delivered wherever you're most comfortable.",
-  },
-  {
-    icon: Users,
-    title: "Holistic Approach",
-    description: "Supporting physical, emotional, and social well-being.",
+    title: "What Are HCS & TxHmL?",
+    description: "Two Texas Medicaid waiver programs that pay for the supports a person with an intellectual or developmental disability needs to live in their own home, a family home, or a small community setting — rather than in an institution.",
   },
 ];
 
-export default function ServicesOverview() {
+export default function ServicesPromise() {
   return (
     <section className="bg-white py-16">
       <Container>
         <Card className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-xl">
           <CardContent className="p-0">
-            <div className="grid lg:grid-cols-4">
-              
+            <div className="grid lg:grid-cols-2">
 
-              <div className="grid grid-cols-2 divide-x divide-y divide-slate-200 lg:col-span-7 lg:grid-cols-4 lg:divide-y-0">
+              <div className="grid divide-x divide-y divide-slategrid divide-x divide-y divide-slate-200">
                 {features.map((feature) => {
                   const Icon = feature.icon;
 
@@ -64,6 +54,16 @@ export default function ServicesOverview() {
                     </div>
                   );
                 })}
+              </div>
+              <div className="overflow-hidden rounded-[2rem] shadow-2xl">
+                <Image
+                  src="/images/service-group.jpg"
+                  alt="Caregiver providing support to a young adult"
+                  width={900}
+                  height={700}
+                  priority
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </CardContent>

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 import { Badge } from "../../components/ui/Badge";
-import { Button } from "../../components/ui/Button";
 import { Container } from "../../components/ui/Container";
 
 const highlights = [

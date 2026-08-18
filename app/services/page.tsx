@@ -3,6 +3,7 @@ import ServicesCTA from "../components/services/ServicesCTA";
 import ServicesGrid from "../components/services/ServicesGrid";
 import ServicesHero from "../components/services/ServicesHero";
 import ServicesOverview from "../components/services/ServicesOverview";
+import ServicesPromise from "../components/services/ServicesPromise";
 
 export const metadata: Metadata = {
   title: "Our Services | Heritage Homecare Network Limited",
@@ -28,7 +29,7 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesOverview />
       <ServicesGrid />
-      <ServicesOverview />
+      <ServicesPromise />
       <ServicesCTA />
     </>
   );
