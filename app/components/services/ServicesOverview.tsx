@@ -69,17 +69,6 @@ export default function ServicesOverview() {
           </CardContent>
         </Card>
 
-        {/* Bottom Note */}
-
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 rounded-2xl bg-green-50 px-6 py-5 text-center md:flex-row">
-          <ShieldCheck className="h-6 w-6 text-green-700" />
-
-          <p className="font-medium text-slate-700">
-            All services are provided in accordance with
-            Home & Community-Based Services (HCS) and Texas Home
-            Living (TxHmL) program guidelines.
-          </p>
-        </div>
       </Container>
     </section>
   );

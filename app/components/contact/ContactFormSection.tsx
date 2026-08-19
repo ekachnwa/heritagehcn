@@ -20,12 +20,12 @@ const contactDetails = [
     icon: Phone,
     title: "Call Us",
     value: "214-991-0608",
-    description: "Mon – Fri: 8:00 AM – 6:00 PM",
+    description: "Mon – Fri: 9:00 AM – 5:00 PM",
   },
   {
     icon: Mail,
     title: "Email Us",
-    value: "info../..heritagehomecare.com",
+    value: "info@heritagehcn.com",
     description: "We aim to respond within 24 hours.",
   },
   {
@@ -45,9 +45,9 @@ const contactDetails = [
     title: "Business Hours",
     value: (
       <>
-        Monday – Friday: 8:00 AM – 6:00 PM
+        Monday – Friday: 9:00 AM – 5:00 PM
         <br />
-        Saturday – Sunday: Closed
+        Saturday – Sunday: Emergency Only
       </>
     ),
     description: "",

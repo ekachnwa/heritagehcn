@@ -8,6 +8,7 @@ interface ServiceCardProps {
   icon: LucideIcon;
   featured?: boolean;
   className?: string;
+  link: string;
 }
 
 export default function ServiceCard({
@@ -16,6 +17,7 @@ export default function ServiceCard({
   icon: Icon,
   featured = false,
   className,
+  link,
 }: ServiceCardProps) {
   return (
     <Card
@@ -58,7 +60,9 @@ export default function ServiceCard({
         {/* Learn More */}
 
         <div className="mt-8 flex items-center font-medium text-green-700">
-          <span>Learn More</span>
+          <span><a href={link} className="hover:underline">
+            Learn More
+          </a></span>
 
           <svg
             className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"

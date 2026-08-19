@@ -26,6 +26,7 @@ const services = [
     description:
       "Equipment and assistive devices that improve independence and daily living.",
     icon: Accessibility,
+    link: "/services/adaptive-aids"
   },
   {
     title: "Critical Care Nursing",
@@ -33,48 +34,56 @@ const services = [
       "Skilled nursing care for individuals with complex medical conditions and ongoing health needs.",
     icon: HeartPulse,
     featured: true,
+    link: "/services/critical-care-nursing"
   },
   {
     title: "Residential Services",
     description:
       "Safe and supportive residential environments designed around each individual's needs.",
     icon: Bed,
+    link: "/services/residential-services"
   },
   {
     title: "In-Home Services",
     description:
       "Personal assistance, daily living support, and companion care provided in the comfort of home.",
     icon: Home,
+    link: "/services/in-home-services"
   },
   {
     title: "Respite Care",
     description:
       "Temporary relief for family caregivers while ensuring uninterrupted, compassionate care.",
     icon: HandHelping,
+    link: "/services/respite-care"
   },
   {
     title: "Speech Therapy",
     description:
       "Helping individuals improve communication, speech, and swallowing abilities.",
     icon: Speech,
+    link: "/services/speech-therapy"
   },
   {
     title: "Audiology",
     description:
       "Professional hearing assessments and audiological support services.",
     icon: Ear,
+    link: "/services/audiology"
   },
   {
     title: "Home Modifications",
     description:
       "Accessibility improvements that create a safer and more independent living environment.",
     icon: Wrench,
+    link: "/services/home-modifications"
   },
   {
     title: "Feeding & Grooming",
     description:
       "Daily personal care assistance delivered respectfully and compassionately.",
     icon: Baby,
+    link: "/services/feeding-grooming"
   },
   {
     title: "Counseling Services",
@@ -82,30 +91,35 @@ const services = [
       "Behavioral, emotional, and mental wellness support for individuals and families.",
     icon: Brain,
     featured: true,
+    link: "/services/counseling-services"
   },
   {
     title: "Dietary Services",
     description:
       "Nutrition planning and healthy meal guidance tailored to individual healthcare needs.",
     icon: Soup,
+    link: "/services/dietary-services"
   },
   {
     title: "Day Habilitation",
     description:
       "Structured skill-building activities that promote confidence, independence, and community participation.",
     icon: Users,
+    link: "/services/day-habilitation"
   },
   {
     title: "Recreational Activities",
     description:
       "Engaging recreational programs that encourage social interaction and overall wellbeing.",
     icon: Bike,
+    link: "/services/recreational-activities"
   },
   {
     title: "Community Supports",
     description:
       "Resources and services that help individuals participate fully within their communities.",
     icon: Activity,
+    link: "/services/community-supports"
   },
 ];
 
@@ -132,6 +146,7 @@ export default function ServicesGrid() {
               description={service.description}
               icon={service.icon}
               featured={service.featured}
+              link={service.link}
             />
           ))}
         </div>

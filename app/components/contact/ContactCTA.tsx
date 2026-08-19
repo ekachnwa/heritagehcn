@@ -101,7 +101,7 @@ export default function ContactCTA() {
                   <Button
                     size="lg"
                     className="w-full justify-center gap-2 bg-[#176d2d] hover:bg-[#125923] cursor-pointer"
-                    onClick={() => route.push("/consltation")}
+                    onClick={() => route.push("/consultation")}
                   >
                     Schedule a Consultation
                     <ArrowRight className="h-4 w-4" />

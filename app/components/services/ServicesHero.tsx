@@ -66,20 +66,6 @@ export default function ServicesHero() {
                 </div>
               ))}
             </div>
-
-            {/* Buttons */}
-
-            {/* <div className="mt-10 flex flex-wrap gap-4">
-              <Button size="lg">
-                Explore Services
-
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-
-              <Button variant="outline" size="lg">
-                Contact Us
-              </Button>
-            </div> */}
           </div>
 
           {/* Right Image */}
@@ -116,16 +102,6 @@ export default function ServicesHero() {
               <p className="mt-2 text-sm text-slate-600">
                 Compassionate healthcare tailored to every
                 individual's unique needs.
-              </p>
-            </div>
-
-            {/* Small Badge */}
-
-            <div className="absolute -left-8 top-8 rounded-2xl bg-green-700 px-6 py-5 text-center text-white shadow-lg">
-              <h3 className="text-3xl font-bold">14+</h3>
-
-              <p className="text-sm text-green-100">
-                Specialized Services
               </p>
             </div>
           </div>

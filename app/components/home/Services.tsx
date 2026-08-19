@@ -22,36 +22,42 @@ const services = [
     description:
       "Professional nursing care provided by licensed healthcare specialists.",
     icon: HeartPulse,
+    link: "/services/skilled-nursing"
   },
   {
     title: "Personal Care",
     description:
       "Daily living assistance including bathing, dressing, and grooming.",
     icon: Home,
+    link: "/services/personal-care"
   },
   {
     title: "Physical Therapy",
     description:
       "Helping clients regain mobility, strength, and independence.",
     icon: Dumbbell,
+    link: "/services/physical-therapy"
   },
   {
     title: "Speech Therapy",
     description:
       "Communication and swallowing therapy tailored to every patient.",
     icon: Brain,
+    link: "/services/speech-therapy"
   },
   {
     title: "Dietary Services",
     description:
       "Nutrition planning that supports healthier lifestyles and recovery.",
     icon: UtensilsCrossed,
+    link: "/services/dietary-services"
   },
   {
     title: "Medical Assessments",
     description:
       "Comprehensive evaluations and ongoing healthcare monitoring.",
     icon: Stethoscope,
+    link: "/services/medical-assessments"
   },
 ];
 
@@ -95,7 +101,8 @@ export default function Services() {
 
                   <Button
                     variant="outline"
-                    className="mt-8 w-full justify-between border-green-700 text-green-700 hover:bg-green-50"
+                    className="mt-8 w-full justify-between border-green-700 text-green-700 hover:bg-green-50 cursor-pointer"
+                    onClick={() => router.push(service.link)}
                   >
                     Learn More
 
@@ -109,7 +116,7 @@ export default function Services() {
 
         <div className="mt-16 text-center">
           <Button size="lg"
-          className="course-pointer"
+          className="cursor-pointer"
           onClick={() => router.push("/services")}
           >
             View All Services

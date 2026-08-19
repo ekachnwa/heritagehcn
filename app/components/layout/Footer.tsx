@@ -104,7 +104,7 @@ export default function Footer() {
 
             <div className="flex gap-3">
               <Mail className="mt-1 h-5 w-5 text-green-500" />
-              <span>info@heritagehomecare.com</span>
+              <span>info@heritagehcn.com</span>
             </div>
 
             <div className="flex gap-3">

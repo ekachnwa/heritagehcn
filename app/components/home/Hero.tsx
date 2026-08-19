@@ -58,7 +58,7 @@ export default function Hero() {
               professional Home & Community-Based Services
               and Texas Home Living programs that empower
               individuals to live independently with dignity,
-              confidence, and comfort.
+              confidence, and comfort. We support and take care of people with intellectual and developmental disabilities.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
