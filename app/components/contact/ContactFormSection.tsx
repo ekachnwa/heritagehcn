@@ -9,7 +9,8 @@ import {
   Send,
   ShieldCheck,
 } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import { Button } from "../../components/ui/Button";
 import { Container } from "../../components/ui/Container";
@@ -55,14 +56,41 @@ const contactDetails = [
 ];
 
 export default function ContactFormSection() {
+  const formRef = useRef<HTMLFormElement>(null); // 2. Create a reference to the form
+  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!formRef.current) return;
 
-    setSubmitted(true);
+    setLoading(true);
+    setSubmitted(false);
+    setErrorMessage("");
 
-    // Connect your API/server action here.
+    const SERVICE_ID = "service_224n1rl"; // From your SMTP config
+    const TEMPLATE_ID = "template_twdo2g8"; // From your SMTP config
+    const PUBLIC_KEY = "vwFOmtCexv5ofK6HW"; // From your SMTP config
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+        publicKey: PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          setSubmitted(true);
+          setLoading(false);
+          formRef.current?.reset(); // Clear the form fields on success
+        },
+        (error) => {
+          console.error("EmailJS failed to send the contact form", error);
+          setErrorMessage(
+            "We could not send your message. Please try again or call us directly."
+          );
+          setLoading(false);
+        }
+      );
   }
 
   return (
@@ -156,6 +184,7 @@ export default function ContactFormSection() {
             </div>
 
             <form
+              ref={formRef}
               onSubmit={handleSubmit}
               className="mt-7 space-y-5"
             >
@@ -182,7 +211,7 @@ export default function ContactFormSection() {
                   label="Email Address"
                   name="email"
                   type="email"
-                  placeholder="you../..example.com"
+                  placeholder="your@example.com"
                   required
                 />
 
@@ -255,10 +284,11 @@ export default function ContactFormSection() {
               {/* Submit */}
               <Button
                 type="submit"
+                disabled={loading}
                 size="lg"
                 className="w-full justify-center gap-2 bg-[#176d2d] hover:bg-[#125923]"
               >
-                {submitted ? "Message Sent" : "Send Message"}
+                {loading ? "Sending..." : submitted ? "Message Sent" : "Send Message"}
 
                 <Send className="h-4 w-4" />
               </Button>
@@ -270,6 +300,15 @@ export default function ContactFormSection() {
                 >
                   Thank you! Your message has been received. Our team
                   will contact you soon.
+                </p>
+              )}
+
+              {errorMessage && (
+                <p
+                  role="alert"
+                  className="rounded-lg bg-red-50 px-4 py-3 text-center text-sm font-medium text-red-800"
+                >
+                  {errorMessage}
                 </p>
               )}
             </form>

@@ -30,7 +30,7 @@ export function Input({
       <input
         id={id}
         className={cn(
-          "w-full rounded-lg border border-gray-300 bg-white px-4 py-3 outline-none transition",
+          "w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-slate-600 outline-none transition",
 
           "focus:border-green-600 focus:ring-2 focus:ring-green-200",
 
