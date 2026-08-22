@@ -1,24 +1,27 @@
-import Link from "next/link";
+"use client";
+import { useRouter } from "next/navigation";
+
 import {
   ArrowRight,
   CalendarCheck,
   Phone,
 } from "lucide-react";
-
-import { Container } from "../../ui/Container";
 import { Button } from "../../ui/Button";
+import { Container } from "../../ui/Container";
+
 
 export default function AdaptiveAidsCTA() {
+  const router = useRouter();
   return (
-    <section className="relative overflow-hidden bg-[#09275f] py-14 sm:py-16 lg:py-20">
+    <section className="relative overflow-hidden bg-gradient-to-br from-green-700 via-green-800 to-slate-900 py-24 text-white">
       {/* Decorative background elements */}
       <div
-        className="absolute -left-24 -top-24 h-64 w-64 rounded-full bg-[#176d2d]/30 blur-3xl"
+        className="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-white/10 blur-3xl"
         aria-hidden="true"
       />
 
       <div
-        className="absolute -bottom-32 -right-20 h-80 w-80 rounded-full bg-[#176d2d]/20 blur-3xl"
+        className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-white/10 blur-3xl"
         aria-hidden="true"
       />
 
@@ -65,12 +68,14 @@ export default function AdaptiveAidsCTA() {
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button
                 size="lg"
-                className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto"
+                className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto cursor-pointer"
+                onClick={() => router.push("/consultation")}
               >
-                <Link href="/consultation">
                   Schedule a Consultation
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+                  <ArrowRight 
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                  />
               </Button>
 
               <a

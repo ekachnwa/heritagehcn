@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import {
   ArrowRight,
   CalendarCheck,
@@ -9,6 +11,8 @@ import { Container } from "../../ui/Container";
 import { Button } from "../../ui/Button";
 
 export default function DietaryServicesCTA() {
+  const router = useRouter();
+  
   return (
     <section
       aria-labelledby="dietary-services-cta-heading"
@@ -71,7 +75,8 @@ export default function DietaryServicesCTA() {
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button
                 size="lg"
-                className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto"
+                className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto cursor-pointer"
+                onClick={() => router.push("/consultation")}
               >
                 <Link href="/consultation">
                   Schedule a Consultation

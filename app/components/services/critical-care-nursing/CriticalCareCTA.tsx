@@ -1,8 +1,13 @@
+"use client";
+
 import { CalendarDays, Phone } from "lucide-react";
-import {Container} from "../../ui/Container";
-import {Button} from "../../ui/Button";
+import { useRouter } from "next/navigation";
+
+import { Button } from "../../ui/Button";
+import { Container } from "../../ui/Container";
 
 export default function CriticalCareCTA() {
+  const router = useRouter();
   return (
     <section className="bg-white py-5">
       <Container>
@@ -25,7 +30,10 @@ export default function CriticalCareCTA() {
           </div>
 
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-            <Button variant="primary">
+            <Button variant="primary"
+              onClick={() => router.push("/consultation")}
+              className="cursor-pointer"
+            >
               Book a Consultation
               <CalendarDays className="ml-2 h-4 w-4" />
             </Button>

@@ -1,18 +1,21 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
+
 import {
   ArrowRight,
   CalendarCheck,
   Phone,
 } from "lucide-react";
 
-import { Container } from "../../ui/Container";
 import { Button } from "../../ui/Button";
+import { Container } from "../../ui/Container";
 
 export default function SpeechTherapyCTA() {
+  const router = useRouter();
   return (
     <section
-      aria-labelledby="speech-therapy-cta-heading"
-      className="relative overflow-hidden bg-[#09275f] py-14 sm:py-16 lg:py-20"
+      className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-emerald-600 py-24 text-white"
     >
       {/* Decorative background shapes */}
       <div
@@ -75,7 +78,8 @@ export default function SpeechTherapyCTA() {
               >
                 <Button
                   size="lg"
-                  className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto"
+                  className="w-full justify-center gap-2 bg-[#176d2d] px-7 hover:bg-[#125923] sm:w-auto cursor-pointer"
+                  onClick={() => router.push("/consultation")}
                 >
                   Schedule a Consultation
                   <ArrowRight

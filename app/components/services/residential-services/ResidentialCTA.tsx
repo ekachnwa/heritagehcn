@@ -1,7 +1,12 @@
-import Link from "next/link";
+"use client";
+import { useRouter } from "next/navigation";
+
+import { Button } from "../../ui/Button";
 import { ArrowRight, Phone } from "lucide-react";
 
 export default function ResidentialCTA() {
+  const router = useRouter();
+
   return (
     <section className="rounded-2xl bg-[#f1f7f2] px-6 py-7 sm:px-10">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
@@ -23,13 +28,15 @@ export default function ResidentialCTA() {
         </div>
 
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Link
-            href="/consultation"
-            className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#176d2d] px-6 text-sm font-bold text-white transition hover:bg-[#125923]"
+          <Button
+            variant="primary"
+            size="lg"
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#176d2d] px-6 text-sm font-bold text-white transition hover:bg-[#125923] cursor-pointer"
+            onClick={() => router.push("/consultation")}
           >
             Book a Consultation
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </Button>
 
           <a
             href="tel:2149910608"

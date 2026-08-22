@@ -22,13 +22,13 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-const serviceLinks = [
-  { name: "All Services", href: "/services" },
-  { name: "Skilled Nursing", href: "/services" },
-  { name: "Residential Services", href: "/services" },
-  { name: "In-Home Services", href: "/services" },
-  { name: "Respite Care", href: "/services" },
-];
+// const serviceLinks = [
+//   { name: "All Services", href: "/services" },
+//   { name: "Skilled Nursing", href: "/services" },
+//   { name: "Residential Services", href: "/services" },
+//   { name: "In-Home Services", href: "/services" },
+//   { name: "Respite Care", href: "/services" },
+// ];
 
 export default function Header() {
   const router = useRouter();
@@ -148,7 +148,7 @@ export default function Header() {
 
       {open && (
         <nav className="border-t bg-white lg:hidden">
-          <div className="space-y-1 px-6 py-5">
+          <div className="space-y-1 px-6 py-5 text-gray-700">
             {navigation.map((item) => (
               item.name === "Services" ? (
                 <div key={item.name}>
@@ -160,7 +160,7 @@ export default function Header() {
                     >
                       {item.name}
                     </Link>
-                    <button
+                    {/* <button
                       type="button"
                       aria-label="Toggle Services menu"
                       aria-expanded={servicesOpen}
@@ -171,10 +171,10 @@ export default function Header() {
                         size={18}
                         className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`}
                       />
-                    </button>
+                    </button> */}
                   </div>
 
-                  {servicesOpen && (
+                  {/* {servicesOpen && (
                     <div className="ml-4 border-l border-slate-200 pl-3">
                       {serviceLinks.map((service) => (
                         <Link
@@ -187,7 +187,7 @@ export default function Header() {
                         </Link>
                       ))}
                     </div>
-                  )}
+                  )} */}
                 </div>
               ) : (
                 <Link
